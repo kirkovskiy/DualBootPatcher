@@ -410,4 +410,53 @@
     pixel_format: RGBX_8888
     brightness_path: /sys/class/backlight/panel/brightness
     default_brightness: 255
+    theme: portrait_hdpihdpi
+    ---
+- name: samsung GT-I9260
+  id: superior
+  codenames:
+      - GT-I9260
+      - superior
+  architecture: armeabi-v7a
+  block_devs:
+    base_dirs:
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num
+    system:
+      - /dev/block/platform/omap/omap_hsmmc.1/by-name/system
+    cache:
+      - /dev/block/platform/omap/omap_hsmmc.1/by-name/cache
+    data:
+      - /dev/block/platform/omap/omap_hsmmc.1/by-name/userdata
+    boot:
+      - /dev/block/platform/omap/omap_hsmmc.1/by-name/boot
+    recovery:
+      - /dev/block/platform/omap/omap_hsmmc.1/by-name/recovery
+    extra:
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p1
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p10
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p11
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p12
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p2
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p3
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p4
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p5
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p6
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p7
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p8
+      - /dev/block/platform/omap/omap_hsmmc.1/by-num/p9
+      - /dev/block/mmcblk1
+      - /dev/block/mmcblk1p1
+ 
+  boot_ui:
+    supported: true
+    flags:
+      - TW_GRAPHICS_FORCE_USE_LINELENGTH
+    brightness_path: 
+    max_brightness: 255
+    default_brightness: 168
+    cpu_temp_path: 
+    battery_path: /sys/class/power_supply/battery/capacity
+    graphics_backends:
+      - fbdev
     theme: portrait_hdpi
+
